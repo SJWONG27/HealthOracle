@@ -1,0 +1,92 @@
+body {
+    background-image: url("./images/pic1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'IBM Plex Sans', sans-serif;
+    width: 100%;
+    height: auto;
+}
+#logo-img{
+    background-image: url("./images/logo\ \(black\).png");
+    position: absolute;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 0px;
+}
+#heading {
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #424242;
+    font-size: 40px;
+    font-weight: bold;
+    display: inline-block;
+    position: absolute;
+    top: 13%;
+    left: 30%
+}
+#prob{
+    color: #ffffff;
+    display: inline-block;
+}
+#p1{
+    font-size: 20px;
+    text-shadow: 1px 1px 1px #424242;
+    font-weight: 400;
+    position: absolute;
+    top: 26%;
+    left: 20%;
+    display: block;
+    width: 400px;
+}
+#figure{
+    text-shadow: 1px 1px 1px #000000;
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    top: 33%;
+    left: 46%;
+    color: lightgreen;
+}
+
+#alert{
+    color: #ffffff;
+    font-size: 12px;
+    position: absolute;
+    top: 95%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+th, td {
+    background-color: rgba(191, 230, 230, 0.8);
+}
+table{
+    width:60%;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    text-align: center;
+}
+tr{
+    height: 40px;
+}
+#p2{
+    color: #ffffff;
+    background-image: url("./images/tip1.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    top: 35%;
+    left: 72%;
+}
+#name{
+    color: rgb(255, 226, 81);
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+}

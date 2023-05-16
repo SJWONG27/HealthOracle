@@ -1,0 +1,228 @@
+#section-1{
+    background-image: url("./images/Title.png");
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+#section-2{
+    background-image: url("./images/About\ Us.png");
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+#section-3{
+    background-image: url("./images/Testimonials.png");
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+#section-4{
+    background-image: url("./images/Contact\ Us.png");
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+#section-1 {
+    opacity: 1;
+    transition: opacity 0.2s ease-out;
+  }
+  
+#section-2, #section-3, #section-4 {
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+ 
+/* section 1 */
+#start-button{
+    position: absolute;
+    top: 80%;
+    left: 8%;
+}
+
+#history-button{
+    position:absolute;
+    top:80%;
+    left:22%;
+    background-color:green;
+    border:2px solid green;
+}
+
+#history-button:hover{
+    background-color:darkgreen;
+    border:2px solid darkgreen;
+}
+
+#logout-button{
+    position:absolute;
+    top:80%;
+    left:39%;
+    background-color:orange;
+    border:2px solid orange;
+}
+
+#logout-button:hover {
+    background-color:darkorange;
+    border:2px solid darkorange;
+}
+
+
+#logo-img{
+    background-image: url("./images/logo\ \(black\).png");
+    position: absolute;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 0;
+    left: 83%;
+}
+
+#main_heading span{
+    font-family: 'Bruno Ace SC', cursive;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #424242;
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    margin-left: 8%;
+    margin-bottom: 5px;
+}
+
+#main_heading_name span{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #5feefb;
+    text-shadow: 1px 1px 1px #424242;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 43%;
+    margin-left: 8%;
+    margin-bottom: 5px;
+}
+
+#description span{
+    color: #ffffff;
+    position: absolute;
+    font-size: 20px;
+    top: 65%;
+    margin-left: 8%;
+    margin-bottom: 5px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+/* section 2 */
+#section-2 #heading2{
+    color: #fff34f;
+    font-size: 28px;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    margin-top: 6%;
+    margin-left: 53%;
+}
+#section-2 #description2_1 {
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+    margin-top: 60px;
+    margin-left: 53%;
+}
+#section-2 #description2_2 {
+    color: #ffffff;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 53%;
+    margin-right: 20px;
+}
+/* section 3 */
+#section-3 #heading3{
+    color: #000000;
+    font-size: 28px;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    float: left;
+    margin-top: 90px;
+    margin-left: 60px;
+}
+#section-3 #description3_1{
+    display: inline-block;
+    position: relative;
+    float: left;
+    text-align: center;
+    background-color: #cfcece;
+    width: 300px;
+    height: 300px;
+    margin-top: 200px;
+    margin-left: -60px;
+}
+#section-3 #description3_2{
+    display: inline-block;
+    position: relative;
+    float: left;
+    text-align: center;
+    background-color: #cfcece;
+    width: 300px;
+    height: 300px;
+    margin-top: 200px;
+    margin-left: 80px;;
+}
+#section-3 #description3_3{
+    display: inline-block;
+    position: relative;
+    float: left;
+    text-align: center;
+    background-color: #cfcece;
+    width: 300px;
+    height: 300px;
+    margin-top: 200px;
+    margin-left: 80px;;
+}
+#section-3 .attributes{
+    color: #644fff;
+    text-shadow: 2px 2px 2px 2px #424242;
+    font-size: 20px;
+    font-weight: 700;
+}
+#section-3 .figure{
+    font-weight: bold;
+    font-size: 30px;
+}
+/* section 4 */
+#logo2-img{
+    background-image: url("./images/logo\ \(black\).png");
+    position: absolute;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    left: 4%;
+}
+#section-4 #heading4 span{
+    color: #ffffff;
+    position: relative;
+    margin-top: 20%;
+    margin-left: 8%;
+    margin-bottom: 10px;;
+    display: inline-block;
+    font-size: 35px;
+    font-weight: 400;
+}
+#address{
+    color: #ffffff;
+    position: relative;
+    margin-left: 8%;
+    margin-bottom: 0%;
+    display: inline-block;
+    font-weight: 500;
+}
+#contact{
+    color: #ffffff;
+    position: relative;
+    margin-left:30%;
+    display: inline-block;
+    font-weight: 500;
+}

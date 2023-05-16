@@ -1,0 +1,15 @@
+Unique categories in Smoking: ['Yes' 'No']
+Unique categories in AlcoholDrinking: ['No' 'Yes']
+Unique categories in Stroke: ['No' 'Yes']
+Unique categories in DiffWalking: ['No' 'Yes']
+Unique categories in Sex: ['Female' 'Male']
+Unique categories in AgeCategory: ['55-59' '80 or older' '65-69' '75-79' '40-44' '70-74' '60-64' '50-54'
+ '45-49' '18-24' '35-39' '30-34' '25-29']
+Unique categories in Race: ['White' 'Black' 'Asian' 'American Indian/Alaskan Native' 'Other'
+ 'Hispanic']
+Unique categories in Diabetic: ['Yes' 'No' 'No, borderline diabetes' 'Yes (during pregnancy)']
+Unique categories in PhysicalActivity: ['Yes' 'No']
+Unique categories in GenHealth: ['Very good' 'Fair' 'Good' 'Poor' 'Excellent']
+Unique categories in Asthma: ['Yes' 'No']
+Unique categories in KidneyDisease: ['No' 'Yes']
+Unique categories in SkinCancer: ['Yes' 'No']

@@ -1,0 +1,109 @@
+body {
+    width:96.5%;
+    height:100vh;
+    min-height:100vh;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+  }
+
+body::-webkit-scrollbar{
+    display:none;
+}
+  
+.container {
+    width: 100%; /* adjust as needed */
+    height: 100%; /* adjust as needed */
+    padding:2%;
+    background-color:lightblue;
+    text-align:center;
+  }
+
+.container .title {
+    padding:10px;
+    font-weight:bold;
+    font-size:35px;
+    color:darkblue;
+    font-family: 'Bruno Ace SC', cursive;
+    text-shadow: 1px 1px 1px #424242;
+}
+
+table {
+    border: 0px solid black;
+    width:100%;
+    height:70vh;
+    box-shadow: 0 0 25px 20px lightskyblue;
+    background-color:whitesmoke;
+    border-radius:25px;
+    border-spacing:0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size:20px;
+  }
+
+td{
+    padding:0.5%;
+    height:35px;
+    border-top:2px solid grey;
+    color:black;
+}
+
+tr{
+    font:black;
+}
+
+.container th{
+    text-align: center;
+    padding:1%;
+    border-bottom:3px solid grey;
+}
+
+.container #time{
+    border-top-left-radius:25px;
+    background-color:lightgoldenrodyellow;
+}
+
+.container #prob{
+    border-top-right-radius:25px;
+    background-color:lightgoldenrodyellow;
+}
+
+.container tbody{
+    height:100%;
+    overflow-y:auto;
+    display:block;
+    overflow-x:hidden;
+}
+
+.container tbody::-webkit-scrollbar{
+    display:none;
+}
+
+.container tr{
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+
+.container .backbutton{
+    padding:15px;
+}
+
+.container button{
+    margin:auto;
+    background-color: rgb(244, 235, 73);
+    color:black;
+    border:0px;
+    font-size:15px;
+    border-radius:15px;
+    padding:15px;
+    font-style:bold;
+}
+
+.container button:hover{
+    background-color:rgb(255, 196, 0);
+    cursor:pointer;
+    font-size:25px;
+    transition:0.2s;
+}

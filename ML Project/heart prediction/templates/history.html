@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Heart Disease Prediction</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='boostrap.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='stylesHistory.css') }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='logo-_white_.ico') }}">
+</head>
+
+<body>
+  <div class="container">
+    <div class="title">
+      PREDICTION HISTORY OF {{ name }}
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th id="time">Time</th>
+          <th id="prob">Probability(%)</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for result in results %}
+        <tr>
+          <td>{{ result[0] }} </td>
+          <td>{{ result[1] }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <div class="backbutton">
+      <button type="button" class="btn btn-primary" onclick="location.href='{{ url_for('startup') }}'">BACK >></button>
+    </div>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <script>
+      alert("{{ messages[0] }}");
+    </script>
+    {% endif %}
+    {% endwith %}
+  </div>
+</body>
+
+</html>

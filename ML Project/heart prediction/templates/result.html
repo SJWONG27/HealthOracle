@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesResult.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='logo-_white_.ico') }}">
+    
+</head>
+<body>
+
+    <div id="heading">
+        <span>Heart Disease Prediction Result</span>
+    </div>
+    <a href="{{ url_for('startup') }}">
+        <div id="logo-img"></div>
+    </a>
+    <section id="prob">
+        <span id="p1">Hi <span id="name">{{ name }}</span>, here is your result:</span>
+        <!-- <span id="p1">Predicted probability of heart disease: </span> -->
+        <span id="figure" class="{{predicted_prob_class}}">{{ predicted_prob }}%</span>
+        <script>
+            let predicted_prob = "{{ predicted_prob }}";
+            if (predicted_prob < 5) {
+                document.getElementById('figure').style.color = 'lightgreen';
+            } else if (predicted_prob >= 5 && predicted_prob <= 7.4) {
+                document.getElementById('figure').style.color = 'yellow';
+            }else if (predicted_prob >= 7.5 && predicted_prob < 20) {
+                document.getElementById('figure').style.color = 'orange';
+            } else {
+                document.getElementById('figure').style.color = 'red';
+            }
+            document.getElementById('figure').classList.add(predicted_prob_class);
+        </script>
+    </section>
+    <section id="advice">
+        <table>
+            <tr>
+              <th>Predicted probability</th>
+              <th>Risks</th>
+            </tr>
+            <tr>
+              <td>Less than a 5%</td>
+              <td>Low</td>
+            </tr>
+            <tr>
+              <td>A 5% to 7.4%</td>
+              <td>Borderline</td>
+            </tr>
+            <tr>
+                <td>A 7.5% to 19.9%</td>
+                <td>Intermediate</td>
+            </tr>
+            <tr>
+                <td>More than a 20%.</td>
+                <td>High</td>
+            </tr>
+          </table>
+          <div id="p2" title="
+          How can I improve my heart disease risk score?
+          1. Eat a heart-healthy diet.
+          2. Get regular aerobic exercise (at least 150 minutes per week).
+          3. Limit alcohol consumption.
+          4. Lose weight (if needed) and maintain a healthy weight.
+          5. Find healthy ways to manage stress.
+          6. Get help to quit smoking and avoid secondhand smoke.
+          7. Manage conditions like high blood pressure, diabetes and high cholesterol.">
+            
+          </div>
+    </section>
+    <section id="alert">
+        <span>This prediction is for informational purposes only and should not be used as a substitute for professional medical advice. Please consult a healthcare provider for personalized medical advice.</span>
+    </section>
+	
+</body>
+</html>

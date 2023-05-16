@@ -1,0 +1,18 @@
+body{
+    width:1600px;
+    height:900px;
+    margin:0;
+    padding:0;
+    background-color:#eee;
+    overflow:hidden;
+}
+
+body .form-container{
+    margin:auto;
+    text-align:center;
+}
+
+.form-outline #togglePassword{
+    margin-left: -30px; 
+    cursor: pointer;
+}
